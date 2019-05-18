@@ -13,11 +13,17 @@
 		}
 
 	</style>
+
 </head>
 <body>
-	<h1><a href="/stuff/random.html">huh</a></h1>
-	<button onclick="alert('okay')">stop</button>
-
+	<h1 id="thing"><a href="/stuff/random.html">huh</a></h1>
+	<button onclick="doTheThing()">stop</button>
 
 </body>
+<script type="text/javascript">
+		function doTheThing() {
+			var title_element = document.getElementById('thing')
+			title_element.innerText = 'I said stop'
+			}
+</script>
 </html>
